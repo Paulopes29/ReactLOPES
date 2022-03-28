@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import {useEffect, useState} from "react";
 import Test from "./Components/Test";
+import Movies from "./Components/Movies";
 
 function App() {
  // let myVar ='Hello World';
@@ -50,18 +51,14 @@ const [movies, setMovies] = useState([]);
       <div className="App">
         <h2>{myVar}</h2>
         <button onClick={onClickHandler}>Click me</button>
-          <button onClick={() => setCount(count + 1)}>
-              Cliquez ici
-          </button>
 
           <Test myProp='hello' updater={ChildToParentUpdater} />
-          {movies.map((element) => {
-                return <h1>{element.title}</h1> })}
+          {
+              movies.map((element) => {
+              return <Movies elem={element} />
 
-
-
-
-
+              })
+          }
 
       </div>
   );
