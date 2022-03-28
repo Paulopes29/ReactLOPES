@@ -1,17 +1,17 @@
 import React from "react";
 import style from "./Movie.module.css";
 
-const Movies = (props) => {
+const MoviesHeader = () => {
     return(
         <div className={style.divMovies}>
             <table className={style.listeMovies}>
                 <tr>
-                    <td>{props.elem.title}</td>
-                    <td>{props.elem.director}</td>
-                    <td>{props.elem.producer}</td>
+                    <th>Titre</th>
+                    <th>Directeur</th>
+                    <th>Producteur</th>
                 </tr>
             </table>
         </div>
     )
 }
-export default  Movies;
+export default  MoviesHeader;

@@ -3,6 +3,7 @@ import './App.css';
 import {useEffect, useState} from "react";
 import Test from "./Components/Test";
 import Movies from "./Components/Movies";
+import MoviesHeader from "./Components/TableHeader";
 
 function App() {
  // let myVar ='Hello World';
@@ -53,6 +54,9 @@ const [movies, setMovies] = useState([]);
         <button onClick={onClickHandler}>Click me</button>
 
           <Test myProp='hello' updater={ChildToParentUpdater} />
+
+          <h1>Movies</h1>
+          <MoviesHeader/>
           {
               movies.map((element) => {
               return <Movies  key={element.episode_id} elem={element} />
