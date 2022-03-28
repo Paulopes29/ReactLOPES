@@ -55,11 +55,9 @@ const [movies, setMovies] = useState([]);
           <Test myProp='hello' updater={ChildToParentUpdater} />
           {
               movies.map((element) => {
-              return <Movies elem={element} />
-
+              return <Movies  key={element.episode_id} elem={element} />
               })
           }
-
       </div>
   );
 }
