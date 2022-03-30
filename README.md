@@ -77,7 +77,11 @@ const myNewObject = {
 ' Pour moi j'ai l'impression que ça fonctionne un peut comme un foreach en c# '
 
 
+# Provider
 
+![image](https://user-images.githubusercontent.com/77489205/160779734-0cb63dcd-2a0e-4fae-8d00-14c29d49e6da.png)
+
+ Un provider pemet de donner accés a des elements, dans cette photo BrowserRouteur donne accés a la balise routeurs
 
 
 
