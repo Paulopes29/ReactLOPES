@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# LOPES ALVES Paulo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#Objectifs de l'application web
 
-## Available Scripts
+'=> Full hook'
+'=> organisation 'feature based' de la structure projet'
+' => Sideffects'
+'=> React Routeur'
+'=> composants réutilisables'
+'=> signup/login avec store et routeur guard '
 
-In the project directory, you can run:
 
-### `npm start`
+#Petits exemples
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+const myObject = {
+toto: 'toto'
+}
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+const { toto } myObject; 
 
-### `npm test`
+const myArray = [1, 2, 4];
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+const[one, tow, three] = MyArray
 
-### `npm run build`
+const myHttpRepute = {...}
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+const {price, ...rest} = myHttpReponse
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+const myNewObject = { 
+...myObject
+}
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+# Definition d'un hook
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+'=> Un hook permet de s'accrocher au cycle de vie des components '
+  '* Exemple'
+  'Le hook use effect s'accroche au componentdidmount'
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#Les event handler
+'Les event handler sont toujours passés en référence'
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![image](https://user-images.githubusercontent.com/77489205/160775756-8ae02484-a5a3-41a2-84df-21b1fcdbf2d6.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![image](https://user-images.githubusercontent.com/77489205/160775859-bc48378f-1251-42f8-a749-6b7c176b7498.png)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#Use state
+'il permet d'actualiser les views dynamiquement'
+'On peut en utiliser une infinité'
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![image](https://user-images.githubusercontent.com/77489205/160777488-4abfc281-f77b-4e88-8b11-f84ffc95e295.png)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#Components
+'=> On peut mettre une infinité de components , sa limite cest la ram du pc'
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+#Création d'un component
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![image](https://user-images.githubusercontent.com/77489205/160776210-cf6e7886-455c-4746-bdac-9cf3ade205c7.png)
 
-### Advanced Configuration
+'Dans un component un ajoute tout le code jsx que l'on veut affciher dans la view, dans cet exemple on affiche juste hello'
+'Il est aussi possible de passer des data pour les utiliser dans les views, les props.'
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![image](https://user-images.githubusercontent.com/77489205/160776540-2837c963-1b86-47ce-b8e4-bbc8eaf63a80.png)
 
-### Deployment
+'Pour appeler la view en question on fait un import et ensuite on appel l'import comme si c'eatit une div. Si on a besoin de passer des donées pour remplir les props on l'appel sinon on appel juste la view'
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![image](https://user-images.githubusercontent.com/77489205/160776997-4973e77f-913b-473b-96d2-827faa5bbf69.png)
 
-### `npm run build` fails to minify
+![image](https://user-images.githubusercontent.com/77489205/160777110-84910e26-1b63-4160-a110-7b6795544c7a.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#map
+'Il permet de parcourir un array pour en créer un autre'
+'Pour moi j'ai l'impression que ça fonctionne un peut comme un foreach en c#'
+
+
+
+
+
+
+
+
