@@ -82,6 +82,18 @@ const myNewObject = {
 ![image](https://user-images.githubusercontent.com/77489205/160779734-0cb63dcd-2a0e-4fae-8d00-14c29d49e6da.png)
 
  Un provider pemet de donner accés a des elements, dans cette photo BrowserRouteur donne accés a la balise routeurs
+ 
+ # Commande pour ajouter les icones de la sideBar
+  yarn add react-pro-sidebar react-icons
+
+# Taches réalisées pendant le projet
+
+=> Side Bar 
+=> Structuration de l'app.js pour afficher les differnts components
+=> les routes
+=> Mise en place des use state , props, import css 
+=> Appel API (il manque la partie Css)
+
 
 
 
