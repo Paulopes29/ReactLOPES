@@ -30,6 +30,11 @@ const myNewObject = {
 ...myObject
 }
 
+#Commande pour créer un projet react 
+npx create-react-app name
+
+
+
 
 # Definition d'un hook
 
@@ -61,8 +66,8 @@ const myNewObject = {
 
 ![image](https://user-images.githubusercontent.com/77489205/160776210-cf6e7886-455c-4746-bdac-9cf3ade205c7.png)
 
-' Dans un component un ajoute tout le code jsx que l'on veut affciher dans la view, dans cet exemple on affiche juste hello '
-' Il est aussi possible de passer des data pour les utiliser dans les views, les props. '
+' Dans un component on ajoute tout le code jsx que l'on veut affciher dans la view, dans cet exemple on affiche juste hello '
+' Il est aussi possible de passer des data pour les afficher dans les views, les props. '
 
 ![image](https://user-images.githubusercontent.com/77489205/160776540-2837c963-1b86-47ce-b8e4-bbc8eaf63a80.png)
 
@@ -92,7 +97,8 @@ const myNewObject = {
 => Structuration de l'app.js pour afficher les differnts components
 => les routes
 => Mise en place des use state , props, import css 
-=> Appel API (il manque la partie Css)
+=> Appel API 
+=> Store (création du useReducer mais pas mis en pratique)
 
 
 
